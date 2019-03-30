@@ -1,0 +1,19 @@
+{
+    "name": "quadro/simple-oauth2",
+    "type": "library, project",
+    "require": {
+        "monolog/monolog": "^1.24",
+        "league/oauth2-server": "^7.3",
+        "phpunit/phpunit": "^8.0",
+        "psr/container": "^1.0"
+    },
+    "autoload": {
+	   "files":[
+            "app/helper.php"
+        ],
+        "psr-4": {
+           "Quadro\\": "app/",
+	       "Quadro\\SimpleOAuth2\\": "src/"
+        }
+    }
+}
